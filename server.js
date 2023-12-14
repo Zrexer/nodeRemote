@@ -2,8 +2,8 @@ const net = require('net');
 const https = require('https');
 const argv = process.argv;
 
-const tok = "6097240873:AAE7CP1UG46n54QjVGSfnN5pv7NQW6_Kfuw";
-const chat = "5483232752";
+const tok = "";
+const chat = "";
 const host = "127.0.0.1";
 
 // Server Side
