@@ -3,7 +3,7 @@ const os = require('os');
 
 
 // Client Side
-const client = net.createConnection({ port: 3000 }, () => {
+const client = net.createConnection({ port: 3000 , host: '127.0.0.1'}, () => {
     console.log('Connected to server');
   });
   
